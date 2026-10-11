@@ -1,29 +1,31 @@
-# Exercices : structure de contrôle « L'itération » (langage C)
+# Exercices : structure de contrôle « L'itération » (Java)
 
 | Fichier | Exercice |
 |---|---|
-| `exercices/ex01_carres.c` | Carrés de 0 à 100 |
-| `exercices/ex02_table_multiplication.c` | Table de multiplication choisie |
-| `exercices/ex03_valeurs_differentes.c` | Seconde valeur différente de la première |
-| `exercices/ex04_positifs_negatifs.c` | Autant de positifs que de négatifs |
-| `exercices/ex05_somme_un_sur_trois.c` | Somme 1 élément sur 3 (while / do-while / for) |
-| `exercices/ex06_serie_puissances.c` | Série 1, -2, 4, -8… |
-| `exercices/ex07_somme_chiffres.c` | Somme des chiffres (sans for) |
-| `exercices/ex08_notes_min_max.c` | Note max / min et nombre d'occurrences |
-| `exercices/ex09_nombre_premier.c` | Nombre premier |
-| `exercices/ex10_factorielle.c` | Factorielle |
-| `exercices/ex11_fibonacci.c` | Fibonacci inférieurs à nbre |
+| `exercices/Ex01Carres.java` | Carrés de 0 à 100 |
+| `exercices/Ex02TableMultiplication.java` | Table de multiplication choisie |
+| `exercices/Ex03ValeursDifferentes.java` | Seconde valeur différente de la première |
+| `exercices/Ex04PositifsNegatifs.java` | Autant de positifs que de négatifs |
+| `exercices/Ex05SommeUnSurTrois.java` | Somme 1 élément sur 3 (while / do-while / for) |
+| `exercices/Ex06SeriePuissances.java` | Série 1, -2, 4, -8… |
+| `exercices/Ex07SommeChiffres.java` | Somme des chiffres (sans for) |
+| `exercices/Ex08NotesMinMax.java` | Note max / min et nombre d'occurrences |
+| `exercices/Ex09NombrePremier.java` | Nombre premier |
+| `exercices/Ex10Factorielle.java` | Factorielle |
+| `exercices/Ex11Fibonacci.java` | Fibonacci inférieurs à nbre |
+
+Explications pour débutant : voir [`EXPLICATIONS.md`](EXPLICATIONS.md).
 
 ## Lancer un exercice dans Visual Studio Code
 
-1. Installer un compilateur C (Windows : MinGW / MSYS2 ; Mac : `xcode-select --install` ; Linux : `gcc`).
-2. Dans VS Code, installer l'extension **C/C++** (Microsoft) — ou **Code Runner** pour un bouton ▶.
-3. Ouvrir le dossier, puis dans le terminal (`Ctrl+ù` ou *Terminal > Nouveau terminal*) :
+1. Installer le **JDK** (Java 17 ou plus, par ex. depuis adoptium.net).
+2. Dans VS Code, installer l'extension **Extension Pack for Java** (Microsoft).
+3. Ouvrir le fichier `.java` : un bouton **Run** apparaît au-dessus de `main` (ou ▶ en haut à droite).
+   Le programme s'exécute dans le terminal en bas, où tu peux taper les valeurs.
+
+Ou en ligne de commande, dans le terminal de VS Code :
 
 ```bash
 cd exercices
-gcc ex01_carres.c -o ex01
-./ex01          # sous Windows : ex01.exe
+java Ex02TableMultiplication.java
 ```
-
-> Avec Code Runner, activer *Run In Terminal* dans les paramètres pour pouvoir taper au clavier (`scanf`).
