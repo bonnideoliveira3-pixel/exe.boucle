@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Odile Marsan</title>
+  <!-- Polices (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;800&family=Instrument+Sans:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== MENU EN HAUT ===== -->
+  <header class="menu">
+    <a class="logo" href="#accueil">O. MARSAN</a>
+    <nav>
+      <a href="#musique">Musique</a>
+      <a href="#concerts">Concerts</a>
+      <a href="#bio">Bio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== ACCUEIL ===== -->
+    <section id="accueil" class="hero">
+      <p class="surtitre">Nouvel album · sortie le 20 novembre 2026</p>
+      <h1>Odile<br>Marsan</h1>
+      <p class="accroche">Folk électronique écrite au bord de la mer du Nord. Des guitares, un vieux synthé Juno, et des chansons sur ce qui reste quand l'eau se retire.</p>
+      <div class="boutons">
+        <a class="bouton plein" href="#musique">Écouter l'album</a>
+        <a class="bouton" href="#concerts">Voir les concerts</a>
+      </div>
+    </section>
+
+    <!-- ===== MUSIQUE ===== -->
+    <section id="musique" class="section">
+      <h2>Basse Marée</h2>
+      <div class="album">
+        <!-- La pochette est dessinée par script.js dans ce canvas -->
+        <canvas id="pochette" width="600" height="600" aria-label="Pochette de l'album Basse Marée"></canvas>
+
+        <div class="infos-album">
+          <p class="details">LP · 8 titres · <span id="duree-totale"></span> · réf. OM-002</p>
+
+          <h3 class="face">Face A</h3>
+          <ol class="titres" data-face="A"></ol>
+
+          <h3 class="face">Face B</h3>
+          <ol class="titres" data-face="B"></ol>
+
+          <p class="note">▶ Clique sur un titre pour écouter un extrait de 8 secondes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONCERTS ===== -->
+    <section id="concerts" class="section">
+      <h2>Concerts</h2>
+      <ul class="dates" id="liste-concerts"></ul>
+    </section>
+
+    <!-- ===== BIO ===== -->
+    <section id="bio" class="section bio">
+      <h2>Bio</h2>
+      <div class="texte-bio">
+        <p>Odile Marsan a grandi à Ostende, entre le port de pêche et le magasin de disques de son oncle. Elle commence par la guitare classique, puis découvre à seize ans un synthétiseur abîmé qu'elle répare elle-même.</p>
+        <p>Son premier EP, <em>Brise-lames</em> (2023), est enregistré dans une cabine de plage. <em>Basse Marée</em>, son premier album, a été écrit pendant un hiver entier passé à noter les horaires des marées et les sons du littoral.</p>
+        <p>Sur scène, elle joue seule avec ses machines, accompagnée d'un violoncelle sur certaines dates.</p>
+      </div>
+      <dl class="chiffres">
+        <div><dt>Premier EP</dt><dd>2023</dd></div>
+        <div><dt>Concerts joués</dt><dd>140</dd></div>
+        <div><dt>Instrument fétiche</dt><dd>Juno-60</dd></div>
+      </dl>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contact">
+        <div>
+          <p>Booking, presse ou simple message : écris-nous.</p>
+          <p class="mail">booking@odilemarsan.example</p>
+        </div>
+        <form id="formulaire">
+          <label for="nom">Nom</label>
+          <input id="nom" name="nom" required>
+
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button class="bouton plein" type="submit">Envoyer</button>
+          <p id="confirmation" class="confirmation" hidden></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pied">
+    <p>© 2026 Odile Marsan · Artiste imaginaire, site d'exemple</p>
+    <p class="reseaux"><a href="#">Instagram</a> <a href="#">Bandcamp</a> <a href="#">YouTube</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
